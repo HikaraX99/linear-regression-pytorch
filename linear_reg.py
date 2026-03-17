@@ -16,7 +16,7 @@ def synthetic_data(w, b, num_examples):
     y += torch.normal(0, 0.01, y.shape)
     return X, y.reshape(-1, 1)
 
-# define real w and b value, also get the features(X) and labels(y)
+# define true w and b value, also get the features(X) and labels(y)
 true_w = torch.tensor([2, -3.4])
 true_b = 4.2
 features, labels = synthetic_data(true_w, true_b, 10000)
@@ -57,11 +57,11 @@ def squared_loss(y_hat, y):
     return (y_hat - y.reshape(y_hat.shape)) ** 2 / 2
 
 # stochastic gradient descent
-# update params
 def sgd(params, lr, batch_size):
     # small batch size sgd
     with torch.no_grad():
         for param in params:
+            # update params
             param -= lr * param.grad/batch_size
             param.grad.zero_()
 
