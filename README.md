@@ -41,7 +41,7 @@ b's error of estimate: tensor([-0.0003], grad_fn=<RsubBackward1>)
 
 ### Training result
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ## Reference
 
