@@ -43,6 +43,12 @@ b's error of estimate: tensor([-0.0003], grad_fn=<RsubBackward1>)
 
 <img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/49bbeef9-ca5f-43e9-8f85-39199bb369b4" />
 
+## MLP
+    Activation function: ReLU
+### Training result
+
+<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/5b161555-81af-4bfa-a933-07e62f0f6e3f" />
+
 ## Reference
 
 All the algorithms refer to the book [_Dive into Deep Learning_](https://d2l.ai/)
